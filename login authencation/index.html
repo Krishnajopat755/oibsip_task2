@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="register" class="tab">
+            <h2>Register</h2>
+            <input type="text" id="register-username" placeholder="Username">
+            <input type="password" id="register-password" placeholder="Password">
+            <div class="button-group">
+                <button onclick="register()">Register</button>
+                <button onclick="showLogin()">Login</button>
+            </div>
+            <p id="register-message"></p>
+        </div>
+
+        <div id="login" class="tab" style="display: none;">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username">
+            <input type="password" id="login-password" placeholder="Password">
+            <div class="button-group">
+                <button onclick="login()">Login</button>
+                <button onclick="showRegister()">Register</button>
+            </div>
+            <p id="login-message"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

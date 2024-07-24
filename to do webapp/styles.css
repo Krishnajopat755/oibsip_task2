@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #6c5ce7; /* Soft purple background */
+}
+
+#task-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7d2c4; /* Light beige background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task span {
+    flex-grow: 1;
+    color: #333; /* Dark gray text */
+}
+
+.task button {
+    margin-left: 10px;
+    background-color: #ffc107; /* Warm orange button */
+    color: #6c5ce7; /* Soft purple text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.task button:hover {
+    background-color: #ffa07a; /* Lighter orange on hover */
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #666; /* Gray text for completed tasks */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333; /* Dark gray text */
+}
+
+input[type="text"], textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #34c759; /* Bright green submit button */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #2ecc71; /* Lighter green on hover */
+}
